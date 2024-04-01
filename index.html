@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+  <section class="container">
+    <figure>
+      <img src="./images/logo.svg" alt="">
+    </figure>
+    <section class="card-container">
+      <form class="form-card">
+        <fieldset>
+          <legend>Bill</legend>
+          <input type="text">
+          <img src="./images/icon-dollar.svg" alt="">
+        </fieldset>
+
+        <fieldset>
+          <legend>Select Tip %</legend>
+          <section>
+            <input type="submit" value="5%" id="5">
+            <input type="submit" value="10%" id="10">
+            <input type="submit" value="15%" id="15">
+            <input type="submit" value="25%" id="25">
+            <input type="submit" value="50%" id="50">
+            <input type="text" placeholder="Custom">
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <div>
+            <legend>Number of People</legend>
+            <span id="error">Can't be zero</span>
+          </div>
+          <input type="text">
+          <img src="./images/icon-person.svg" alt="icon-person">
+        </fieldset>
+      </form>
+      <section class="card-result">
+        <section>
+          <section class="card-amount">
+            <div>
+              <span>Tip Amount</span>
+              <span>/ person</span>
+            </div>
+            <h2 id="tip-amount">$0</h2>
+          </section>
+          <section class="card-amount">
+            <div>
+              <span>Total</span>
+              <span>/ person</span>
+            </div>
+            <h2 id="total">$0</h2>
+          </section>
+        </section>
+        <input type="submit" value="Reset">
+      </section>
+    </section>
+  </section>
+  <script src="./js/calculo.js"></script>
+</body>
+</html>
